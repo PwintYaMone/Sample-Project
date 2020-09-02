@@ -41,6 +41,13 @@ Route::Delete('/positions/force/{id}','PositionController@forcedelete');
 //Department position
 Route::apiResource('/deparment_positions','DeppositionController');
 
+//validation
+Route::get('save','EmployeeRegistrationController@save');
+Route::get('position/save','PositionRegistrationController@save');
+Route::post('employee/update','EmployeeRegistrationController@update');
+
+
+
 
 
 
